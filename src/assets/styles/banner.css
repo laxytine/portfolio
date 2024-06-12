@@ -1,0 +1,12 @@
+/* HomePage.css */
+.banner {
+  height: 100vh;
+  background: url('../images/4.png') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}

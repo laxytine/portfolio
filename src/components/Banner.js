@@ -1,13 +1,14 @@
 import React from 'react';
-import '../assets/styles/home.css';
+import '../assets/styles/banner.css';
 
-const Banner = () => {
+export default function Banner() {
   return (
     <div className="banner">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Explore my work and projects</p>
+      <div>
+        <h1 className="title">Bridging the Gap: Electronics Engineer to Web Developer</h1>
+        <h3 className="subtitle">Merging Precision with Creativity</h3>
+      </div>
     </div>
   );
 };
 
-export default Banner;

@@ -77,17 +77,14 @@ my-portfolio
 │   │   └── styles
 │   │       ├── about.css
 │   │       ├── contact.css
-│   │       ├── home.css
+│   │       ├── banner.css
 │   │       ├── navbar.css
 │   │       └── projects.css
 │   ├── components
+│   │   ├── About.js
 │   │   ├── AppNavBar.js
 │   │   ├── Banner.js
-│   │   └── Contact.js
-│   ├── pages
-│   │   ├── About.js
 │   │   ├── Contact.js
-│   │   ├── Home.js
 │   │   └── Projects.js
 │   ├── App.css
 │   ├── App.js
