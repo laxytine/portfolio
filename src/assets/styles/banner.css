@@ -1,4 +1,5 @@
-/* HomePage.css */
+/* banner.css */
+
 .banner {
   height: 100vh;
   background: url('../images/4.png') no-repeat center center fixed;
@@ -9,4 +10,130 @@
   align-items: center;
   text-align: center;
   padding: 20px;
+}
+
+.title1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 50px;
+  animation: slideInLeft 2s ease-in-out;
+}
+
+.title2 {
+  font-family: "Gwendolyn", cursive;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 100px;
+  animation: slideInRight 2s ease-in-out; 
+}
+
+.subtitle {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 30px;
+  animation: slideUpSubtitle 1s ease-in-out; 
+}
+
+.button-container {
+  margin-top: 20px;
+  animation: slideUpButtonContainer 1s ease-in-out; 
+}
+
+.button {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  text-decoration: none;
+  border-radius: 50px;
+  margin-right: 10px;
+  background-image: linear-gradient(to left, #007bff, #00bcd4);
+  animation: slideUpButton 1s ease-in-out;
+}
+
+.button:hover {
+  background-image: linear-gradient(to left, #0056b3, #0097a7);
+}
+
+/* Additional animations */
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideUpSubtitle {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpButtonContainer {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUpButton {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Media Queries for Tablet and Mobile */
+@media (max-width: 768px) {
+  .title1 {
+    font-size: 30px;
+    line-height: 1;
+  }
+  .title2 {
+    font-size: 70px;
+    line-height: 1;
+
+  }
+  .subtitle {
+    font-size: 20px;
+    line-height: 1;
+
+  }
+  .button {
+    padding: 8px 16px;
+    font-size: 12px;
+    line-height: 1;
+  }
 }
