@@ -14,7 +14,7 @@ export default function AppNavBar() {
           <img
             src={logo}
             alt="logo"
-            width={150}
+            width={100}
             className="img-fluid"
           />
         </Navbar.Brand>
@@ -24,28 +24,28 @@ export default function AppNavBar() {
             <Nav.Link
               as={NavLink}
               to="/"
-              exact="true"
+              exact
             >
               HOME
             </Nav.Link>
             <Nav.Link
               as={NavLink}
               to="/about"
-              exact="true"
+              exact
             >
               ABOUT ME
             </Nav.Link>
             <Nav.Link
               as={NavLink}
               to="/projects"
-              exact="true"
+              exact
             >
               PROJECTS
             </Nav.Link>
             <Nav.Link
               as={NavLink}
               to="/contact"
-              exact="true"
+              exact
             >
               CONTACT
             </Nav.Link>

@@ -1,44 +1,104 @@
-/* banner.css */
-
 .banner {
-  height: 100vh;
-  background: url('../images/4.png') no-repeat center center fixed;
-  background-size: cover;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100vh;
+  background: url('../images/1.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.text-section {
   text-align: center;
-  padding: 20px;
+  margin-top: 50px;
 }
 
-.title1 {
+#hi {
+  margin-bottom: 0;
   font-family: "Roboto", sans-serif;
-  font-weight: 900;
+  font-weight: 700;
   font-style: normal;
-  font-size: 50px;
-  animation: slideInLeft 2s ease-in-out;
+  font-size: 40px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.title2 {
+.intro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.text {
+  margin: 0 10px 0 0;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 40px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+#name {
+  color: deepskyblue;
+  margin: auto;
   font-family: "Gwendolyn", cursive;
   font-weight: 700;
   font-style: normal;
-  font-size: 100px;
-  animation: slideInRight 2s ease-in-out; 
+  font-size: 80px;
+  animation: fadeIn 1s ease-in-out;
 }
 
-.subtitle {
+.role {
   font-family: "Roboto", sans-serif;
-  font-weight: 400;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 20px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.caption1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-bottom: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.caption2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 15px;
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.subcaption {
+  font-family: "Gwendolyn", cursive;
+  font-weight: 700;
   font-style: normal;
   font-size: 30px;
-  animation: slideUpSubtitle 1s ease-in-out; 
+  margin: auto;
+  animation: fadeIn 1s ease-in-out;
+}
+
+.profile-image {
+  width: 100%;
+  height: auto;
+  border-radius: 0;
+  transition: transform 0.5s ease;
+  margin: 50px auto;
+  align-content: center;
+}
+
+.profile-image:hover {
+  transform: scale(1.1);
 }
 
 .button-container {
+  text-align: center;
   margin-top: 20px;
-  animation: slideUpButtonContainer 1s ease-in-out; 
+  animation: fadeIn 2s ease-in-out;
 }
 
 .button {
@@ -52,7 +112,7 @@
   border-radius: 50px;
   margin-right: 10px;
   background-image: linear-gradient(to left, #007bff, #00bcd4);
-  animation: slideUpButton 1s ease-in-out;
+  animation: fadeIn 1s ease-in-out;
 }
 
 .button:hover {
@@ -60,60 +120,16 @@
 }
 
 /* Additional animations */
-@keyframes slideInLeft {
-  from {
-    opacity: 0;
-    transform: translateX(-100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-@keyframes slideInRight {
-  from {
-    opacity: 0;
-    transform: translateX(100%);
-  }
-  to {
-    opacity: 1;
-    transform: translateX(0);
-  }
+.fade-in {
+  animation: fadeIn 1s ease-in-out;
 }
 
-@keyframes slideUpSubtitle {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUpButtonContainer {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes slideUpButton {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
 
 /* Media Queries for Tablet and Mobile */
 @media (max-width: 768px) {
@@ -124,12 +140,10 @@
   .title2 {
     font-size: 70px;
     line-height: 1;
-
   }
   .subtitle {
     font-size: 20px;
     line-height: 1;
-
   }
   .button {
     padding: 8px 16px;
