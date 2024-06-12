@@ -2,7 +2,6 @@
 
 Welcome to my personal portfolio website. This project showcases my work, skills, and projects using a ReactJS-only architecture.
 
-![Portfolio Screenshot](path-to-screenshot)
 
 ## Table of Contents
 
